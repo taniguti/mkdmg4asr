@@ -1,5 +1,5 @@
 #!/bin/sh -f
-# Author: Takanori TANIGUCHI taniguti.t@gmail.com
+# Author: Takanori TANIGUCHI taniguti.t_at_gmail.com
 
 #################
 # Functions
