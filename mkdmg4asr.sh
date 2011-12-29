@@ -39,6 +39,9 @@ DeleteLKDC() {
 	if [ -f "${1}/System/Library/LaunchDaemons/com.apple.configureLocalKDC.plist" ]; then
 		rm -fvr "${1}/var/db/krb5kdc"
 		defaults delete "${1}/System/Library/LaunchDaemons/com.apple.configureLocalKDC" Disabled
+		if [ -f "${1}/private/var/db/.configureLocalKDC" ]; then
+			rm -fv "${1}/private/var/db/.configureLocalKDC" 
+		fi
 		systemkeychain -k "${1}/Library/Keychains/System.keychain" -C -f
 	fi
 }
