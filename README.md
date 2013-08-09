@@ -1,3 +1,5 @@
+## mkdmg4asr - Create DiskImage for asr (Apple Software Restore)
+
 USAGE::
 mkdmg4asr.sh /fullpath/to/srcvolume /fullpath/to/distination [stream]
 
